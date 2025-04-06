@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
-import { UnavailableServiceModal } from '@/components/user/common/modals/UnavailableServiceModal'
-
 import Providers from './config/providers/Providers'
 import './globals.css'
 
@@ -55,11 +53,6 @@ export default function RootLayout({
         <html lang='ru'>
             <body className={`${onset.className}`}>
                 <Providers>{children}</Providers>
-
-                {/* <h1 className='text-3xl font-steppe font-extrabold'>Более</h1> */}
-
-                {/* Отображение модального окна условно */}
-                {/* <UnavailableServiceModal /> */}
             </body>
         </html>
     )
